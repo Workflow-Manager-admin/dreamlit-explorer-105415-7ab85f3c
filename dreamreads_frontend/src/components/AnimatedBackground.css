@@ -1,0 +1,30 @@
+/* Animated dreamlike floating background */
+.animated-bg {
+  position: fixed;
+  z-index: 2;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.dream-blob {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.43;
+  filter: blur(32px) saturate(1.4);
+  animation: floatLoop 18s ease-in-out infinite alternate;
+}
+
+.blob1 { width: 34vw; height: 23vw; background: #ffd54f; top: 8vh; left: 5vw; animation-delay: 0s;}
+.blob2 { width: 27vw; height: 17vw; background: #26c6da; bottom: 13vh; right: 6vw; animation-delay: 2s;}
+.blob3 { width: 17vw; height: 15vw; background: #7e57c2; bottom: 10vh; left: 4vw; animation-delay: 4.8s;}
+.blob4 { width: 14vw; height: 13vw; background: #b4aee8; top: 12vh; right: 8vw; animation-delay: 7.3s;}
+
+@keyframes floatLoop {
+  0% { transform: scale(1) translateY(0);}
+  48% { transform: scale(0.96) translateY(-8vh);}
+  65% { transform: scale(1.02) translateY(2vh);}
+  100% { transform: scale(1.08) translateY(4vh);}
+}

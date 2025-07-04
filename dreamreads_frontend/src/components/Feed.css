@@ -1,0 +1,30 @@
+/* Dream Vibes Book Feed commons */
+.feed-container {
+  padding: 46px 3vw 3vw 295px;
+  position: relative;
+}
+
+.feed-title {
+  font-size: 1.9rem;
+  color: #7e57c2;
+  margin-bottom: 2.3rem;
+  text-shadow: 0 4px 12px #26c6da17;
+  font-weight: 700;
+}
+
+.feed-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+  gap: 2.1rem;
+  margin-top: 0.7rem;
+}
+
+@media (max-width: 900px) {
+  .feed-container {
+    padding: 120px 6vw 6vw 6vw;
+  }
+  .feed-grid {
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+}

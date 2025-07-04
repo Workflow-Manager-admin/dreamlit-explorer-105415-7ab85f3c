@@ -1,0 +1,31 @@
+/* Profile page styles */
+.profile-container {
+  padding: 48px 3vw 3vw 295px;
+  min-height: 85vh;
+}
+.profile-toggle {
+  display: flex;
+  gap: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+.profile-toggle button {
+  background: #f7f0fa;
+  color: #7e57c2;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  padding: 0.6rem 1.1rem;
+  box-shadow: 0 1px 4px #7e57c225;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.profile-toggle button.active, .profile-toggle button:hover {
+  background: linear-gradient(90deg,#7e57c2 50%,#26c6da 150%);
+  color: #fff;
+}
+@media (max-width: 900px) {
+  .profile-container {
+    padding: 123px 2vw 2vw 2vw;
+  }
+}

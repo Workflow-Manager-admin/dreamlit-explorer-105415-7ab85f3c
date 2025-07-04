@@ -1,0 +1,4 @@
+{
+    "command": "npm install && npx tsc --noEmit && npm test -- --ci",
+    "working_directory": "/home/kavia/workspace/code-generation/dreamlit-explorer-105415-7ab85f3c/dreamreads_frontend"
+}
